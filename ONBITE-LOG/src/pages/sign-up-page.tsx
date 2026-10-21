@@ -30,7 +30,7 @@ export default function SignUpPage() {
   };
 
   return (
-    <div>
+    <div className="flex flex-col gap-4">
       <div className="text-xl font-bold">회원가입</div>
       <div className="flex flex-col gap-2">
         <Input
@@ -54,7 +54,7 @@ export default function SignUpPage() {
           disabled={isSignUpPending}
         />
       </div>
-      <div>
+      <div className="flex flex-col gap-2">
         <Button
           className="w-full"
           onClick={handleSignUpClick}
@@ -63,7 +63,7 @@ export default function SignUpPage() {
           회원가입
         </Button>
       </div>
-      <div>
+      <div className="flex flex-col gap-2">
         <Link className="text-muted-foreground hover:underline" to={"/sign-in"}>
           이미 계정이 있다면? 로그인
         </Link>
